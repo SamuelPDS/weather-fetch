@@ -1,12 +1,63 @@
-body {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+
+
+:root {
+    --black-background-color: #000;
+    --ligth-font: #FFF;
 }
 
+body{
+    height: 100vh
+}
 
-.container{
+.container__header {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ligth-font);
+    background-color: var(--black-background-color);
+    align-items: center;
+}
+
+.container__main{
     font-size: 1.5rem;
     margin-top: 1rem;
+    flex: 1;
 }
+
+
+.container__header, .container__main, .container__paragraph {
+    padding: 2rem 0;
+}
+
+.container__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__weather {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container__weather img, .container__header img {
+    width: 80px;
+    height: auto;
+}
+
+.container__paragraph-temp {
+    font-size: 2rem;
+}
+
+.container__footer {
+    background-color: var(--black-background-color);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: var(--ligth-font);
+    text-align: center;
+}
+
