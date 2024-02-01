@@ -1,7 +1,7 @@
 
 const divTag = document.querySelector('.container__content')
 
-const url = 'http://api.weatherapi.com/v1/current.json?key=ea460dbe70f64fa1a70210336243101&q=Belo Horizonte'
+const url = 'https://api.weatherapi.com/v1/current.json?key=ea460dbe70f64fa1a70210336243101&q=Belo Horizonte'
 
 fetch(url).then((res) => res.json())
 .then((data) => {
