@@ -8,13 +8,17 @@ fetch(url).then((res) => res.json())
     const icon = data.current.condition.icon
      const locationName = data.location.name;
      const lastUptaded = data.current.last_updated;
+     const feelsLike = data.current.feelslike_c;
      const temp = data.current.temp_c
-     console.log(data) 
+    console.log(data) 
       divTag.innerHTML = `
          <p class="container__paragraph">Atualizado em ${lastUptaded}</p>
          <p class="container__paragraph">Cidade: ${locationName}</p>
-         <img src=${icon}>
-         <p class="container__paragraph">Temperatura:<h2>${temp}°C</h2></p>
+         <div class="container__weather">
+            <img src=${icon}>
+         <p class="container__paragraph-temp">${temp}°C</p>
+         </div>
+         <p class="container__paragraph-temp">Sensação Térmica: ${feelsLike}</p>
          
      `    
 })
