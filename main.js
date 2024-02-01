@@ -18,7 +18,7 @@ fetch(url).then((res) => res.json())
             <img src=${icon}>
          <p class="container__paragraph-temp">${temp}°C</p>
          </div>
-         <p class="container__paragraph-temp">Sensação Térmica: ${feelsLike}</p>
+         <p class="container__paragraph-temp-feesLike">Sensação Térmica: ${feelsLike}</p>
          
      `    
 })
