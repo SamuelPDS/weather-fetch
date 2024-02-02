@@ -1,7 +1,7 @@
 
 const divTag = document.querySelector('.container__content')
 
-const url = 'https://api.weatherapi.com/v1/current.json?key=ea460dbe70f64fa1a70210336243101&q=Belo Horizonte&lang=pt'
+const url = 'https://api.weatherapi.com/v1/current.json?key=ea460dbe70f64fa1a70210336243101&q=Belo Horizonte&lang=pt&alerts=yes'
 
 fetch(url).then((res) => res.json())
 .then((data) => {
@@ -11,7 +11,7 @@ fetch(url).then((res) => res.json())
     const lastUptaded = data.current.last_updated;
     const feelsLike = data.current.feelslike_c;
     const temp = data.current.temp_c;
-        // console.log(conditionText) 
+        //console.log(data) 
       divTag.innerHTML = `
          <p class="container__paragraph">Atualizado em ${lastUptaded}</p>
          <p class="container__paragraph">Cidade: ${locationName}</p>
