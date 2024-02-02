@@ -3,6 +3,7 @@
 :root {
     --black-background-color: #000;
     --ligth-font: #FFF;
+    --weather-bkgnd: #2e61f8;
 }
 
 body{
@@ -38,8 +39,9 @@ body{
 }
 
 .container__weather {
-    padding: 2rem 0;
-    background-color: rgb(136, 166, 255);
+    padding: 2rem 1rem;
+    background-color: var(--weather-bkgnd);
+    color: var(--ligth-font);
     display: flex;
     flex-direction: column;
     align-items: center;
