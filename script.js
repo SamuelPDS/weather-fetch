@@ -11,7 +11,7 @@ fetch(url).then((res) => res.json())
     const lastUptaded = data.current.last_updated;
     const feelsLike = data.current.feelslike_c;
     const temp = data.current.temp_c;
-        console.log(conditionText) 
+        // console.log(conditionText) 
       divTag.innerHTML = `
          <p class="container__paragraph">Atualizado em ${lastUptaded}</p>
          <p class="container__paragraph">Cidade: ${locationName}</p>
