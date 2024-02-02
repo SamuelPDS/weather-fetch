@@ -28,7 +28,7 @@ body{
 
 
 .container__header, .container__main, .container__paragraph {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .container__content {
@@ -38,9 +38,13 @@ body{
 }
 
 .container__weather {
+    padding: 2rem 0;
+    background-color: rgb(136, 166, 255);
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
+    border-radius: 1rem;
 }
 
 .container__weather img, .container__header img {
@@ -49,8 +53,14 @@ body{
 }
 
 .container__paragraph-temp {
+    display: flex;
+    align-items: center;
     font-size: 2rem;
 }
+
+/* .container__paragraph-conditionText {
+    display: inline-block;
+} */
 
 .container__footer {
     background-color: var(--black-background-color);
